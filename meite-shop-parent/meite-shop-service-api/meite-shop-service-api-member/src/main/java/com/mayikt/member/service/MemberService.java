@@ -1,4 +1,4 @@
-package com.mayikt.weixin;
+package com.mayikt.member.service;
 
 import com.weixin.Testwx;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @author yifenrui
  * @since 2019/5/18
  */
-public interface WeixinService {
 
-    @GetMapping("/getApp")
-    public Testwx getEntity();
+public interface MemberService {
+    @GetMapping("/membertoWeixin")
+    public Testwx memberToWeixin();
 }
